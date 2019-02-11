@@ -19,7 +19,7 @@ import static com.codeborne.selenide.Selenide.open;
         features = {"src/test/java/ru/ksodd/Features"},
         glue = "ru/ksodd/Steps",
         tags = {"@Реализация or @Проектирование or @Согласование or @Утверждение or @Инициатива"},
-//            format = {"json:target/cucumber.json", "html:target/site/cucumber-pretty"},
+        plugin = {"json:target/allure-results"},
         strict = true
 )
 
@@ -30,7 +30,7 @@ public class Runner {
     static public void Initialization() throws AWTException {
         Configuration.timeout = 15000;
         Configuration.startMaximized = true;
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\spiridonov_fl\\Desktop\\KoT\\src\\test\\repository\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "src\\test\\repository\\chromedriver.exe");
 //        Configuration.headless = true;
         Configuration.browser = "chrome";
 //        Если нужно оставлять браузер открытым по окончании теста, по умолчанию значение false

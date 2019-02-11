@@ -61,7 +61,9 @@
                 <artifactId>allure-maven</artifactId>
                 <version>2.8</version>
                 <configuration>
-                    <reportVersion>2.4.1</reportVersion>
+                    <!--<reportVersion>2.4.1</reportVersion>-->
+                    <resultsDirectory>${basedir}/target/allure-results</resultsDirectory>
+                    <reportDirectory>${basedir}/target/allure-reports</reportDirectory>
                 </configuration>
             </plugin>
         </plugins>
@@ -128,6 +130,7 @@
             <artifactId>allure-cucumber4-jvm</artifactId>
             <version>2.9.0</version>
         </dependency>
+
         <dependency>
             <groupId>io.qameta.allure</groupId>
             <artifactId>allure-selenide</artifactId>
