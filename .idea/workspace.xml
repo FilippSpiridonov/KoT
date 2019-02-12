@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0e000fa9-2bfa-4e03-9359-4a33411424e0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-    </list>
+    <list default="true" id="0e000fa9-2bfa-4e03-9359-4a33411424e0" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -57,8 +54,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="343">
-              <caret line="36" column="53" selection-start-line="36" selection-start-column="53" selection-end-line="36" selection-end-column="53" />
+            <state relative-caret-position="93">
+              <caret line="30" column="11" selection-start-line="30" selection-start-column="11" selection-end-line="39" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -319,7 +316,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549948938686" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549960938639" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
@@ -401,7 +398,14 @@
       <option name="project" value="LOCAL" />
       <updated>1549871541485</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Правки в мавене">
+      <created>1549960673396</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1549960673396</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -483,7 +487,8 @@
     </ignored-roots>
     <MESSAGE value="test" />
     <MESSAGE value="В мавене добавлен путь создания аллюра отчета" />
-    <option name="LAST_COMMIT_MESSAGE" value="В мавене добавлен путь создания аллюра отчета" />
+    <MESSAGE value="Правки в мавене" />
+    <option name="LAST_COMMIT_MESSAGE" value="Правки в мавене" />
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="watch">
@@ -875,8 +880,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
-          <caret line="36" column="53" selection-start-line="36" selection-start-column="53" selection-end-line="36" selection-end-column="53" />
+        <state relative-caret-position="93">
+          <caret line="30" column="11" selection-start-line="30" selection-start-column="11" selection-end-line="39" selection-end-column="28" />
         </state>
       </provider>
     </entry>
