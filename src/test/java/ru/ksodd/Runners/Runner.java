@@ -19,7 +19,7 @@ import static com.codeborne.selenide.Selenide.open;
         features = {"src/test/java/ru/ksodd/Features"},
         glue = "ru/ksodd/Steps",
         tags = {"@Реализация or @Проектирование or @Согласование or @Утверждение or @Инициатива"},
-        plugin = {"json:target/allure-results"},
+//        plugin = {"json:target/allure-results"},
         strict = true
 )
 
