@@ -30,7 +30,7 @@ public class Runner {
     static public void Initialization() throws AWTException {
         Configuration.timeout = 15000;
         Configuration.startMaximized = true;
-        System.setProperty("webdriver.chrome.driver", "src\\test\\repository\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "src/test/repository/chromedriver.exe");
 //        Configuration.headless = true;
         Configuration.browser = "chrome";
 //        Если нужно оставлять браузер открытым по окончании теста, по умолчанию значение false
