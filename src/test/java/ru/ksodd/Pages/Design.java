@@ -8,6 +8,7 @@ import ru.ksodd.Helpers.TestHelper;
 import java.io.File;
 
 import static com.codeborne.selenide.Condition.exist;
+import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.*;
 
 public class Design {
@@ -33,8 +34,14 @@ public class Design {
     }
 
     public static void clickCheck() {
-        $(By.cssSelector("div.v-input.v-input--selection-controls.v-input--checkbox.theme--light > div > div.v-input__slot > div > div")).click();
+        try {
+            $(By.cssSelector("div.v-input.v-input--selection-controls.v-input--checkbox.theme--light > div > div.v-input__slot > div > div")).should(visible);
+            $(By.cssSelector("div.v-input.v-input--selection-controls.v-input--checkbox.theme--light > div > div.v-input__slot > div > div")).click();
+        } catch (AssertionError e){
+            $(By.cssSelector("#formMVKS > div:nth-child(7) > div > div > div > div > div.v-input__slot > div > div")).should(visible);
+            $(By.cssSelector("#formMVKS > div:nth-child(7) > div > div > div > div > div.v-input__slot > div > div")).click();
 
+        }
     }
 
     public static void selectStreet(String street) {

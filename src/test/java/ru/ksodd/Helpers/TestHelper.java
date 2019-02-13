@@ -62,8 +62,8 @@ public class TestHelper {
     public static void clickButton(String name_button) {
         String xpath = "//div[text()[contains(.,'" + name_button + "')]]";
         sleep(1500);
-        TestHelper.log("карточка есть "+number, "Не смог найти карточку "+number, xpath,
-                "should","");
+//        TestHelper.log("карточка есть "+number, "Не смог найти карточку "+number, xpath,
+//                "should","");
         TestHelper.log("Клик на кнопку "+name_button+" произошел", "Клик на кнопку "+name_button+" НЕ произошло", xpath,
                 "should","");
         $(By.xpath(xpath)).click();
@@ -107,13 +107,17 @@ public class TestHelper {
         $(By.xpath("//span[text()[contains(.,'" + number1 + "')]]/../../../../*//div[2]/span[text()[contains(.,'" + task + "')]]")).click();
     }
 
-    public static void inputComment(String text) {
-        String xpath = "//textarea[@aria-label='Комментарий']";
-        log("Произошел клик на поле комментарии","Клик на поле комментарии не произошел",
+    public static void inputAll(String input, String text) {
+        String xpath = "//*[@aria-label='"+input+"']";
+        log("Произошел клик на поле "+input+"","Клик на поле "+input+" не произошел",
                 xpath, "click","");
-        log("Ввод комментария","Ввод комментария не произошел",
+        log("Ввод "+input+"","Ввод "+input+" не произошел",
                 xpath, "setValue",text);
 
+    }
+
+    public static void clickTab(String nameTab){
+        $(By.xpath("//div[@class='v-tabs__div']/a[text()[contains(.,'"+nameTab+"')]]")).click();
     }
 
 

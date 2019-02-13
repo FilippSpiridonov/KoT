@@ -12,8 +12,8 @@ public class General_step_cucumber {
         TestHelper.clickAddNewCard(button_name);
     }
 
-    @And("^Ввод комментария \"(.*)\"$")
-    public static void inputComment(String text) {
-        TestHelper.inputComment(text);
+    @And("^Ввод \"(.*)\" \"(.*)\"$")
+    public static void inputComment(String input, String text) {
+        TestHelper.inputAll(input, text);
     }
 }
