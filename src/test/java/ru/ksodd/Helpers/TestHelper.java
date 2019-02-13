@@ -5,11 +5,13 @@ import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.SelenideElement;
 import com.codeborne.selenide.WebDriverRunner;
+import com.codeborne.selenide.junit.ScreenShooter;
 import io.qameta.allure.*;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.LoggingException;
 import org.apache.logging.log4j.core.async.AsyncLoggerConfigDefaultExceptionHandler;
 import org.junit.Assert;
+import org.junit.Rule;
 import org.openqa.selenium.By;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -28,6 +30,9 @@ public class TestHelper {
 
     public static String number = "";
     public static String number1 = "";
+
+    @Rule
+    public ScreenShooter makeScreenshotOnFailure = ScreenShooter.failedTests();
 
     @Attachment
     //Ввод текста в Allure report
@@ -55,6 +60,7 @@ public class TestHelper {
             }
             step(log);
         } catch (AssertionError e) {
+            ScreenShooter.failedTests();
             Assert.fail(logerr);
         }
     }
@@ -73,7 +79,7 @@ public class TestHelper {
         $(By.xpath("//div/div[@class='snotifyToast__body']")).should(exist);
         number = $(By.xpath("//div/div[@class='snotifyToast__body']")).getText().replaceAll("\\D+", "");
         $(By.xpath("//div[@class='layout row wrap justify-end']/div/div/span[text()[contains(.,'" + number + "')]]")).should(exist);
-        System.out.println(number);
+        System.out.println("Карточка " + number);
     }
 
     public static void testAddCardPackage() {

@@ -35,7 +35,7 @@ public class Runner {
         Configuration.headless = true;
 //        Configuration.browser = "chrome";
 //        Если нужно оставлять браузер открытым по окончании теста, по умолчанию значение false
-//            Configuration.holdBrowserOpen = true;0
+//            Configuration.holdBrowserOpen = true;
         open("http://172.20.0.78:8181/");
         Configuration.savePageSource = false;
 
