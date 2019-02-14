@@ -10,11 +10,12 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.BeforeClass;
 import org.junit.runner.RunWith;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.testng.annotations.Test;
 
 import java.awt.*;
 
 import static com.codeborne.selenide.Selenide.open;
-
+@Test
 @RunWith(Cucumber.class)
 @CucumberOptions(
         features = {"src/test/java/ru/ksodd/Features"},

@@ -73,8 +73,19 @@
                     <reportDirectory>${basedir}/target/allure-reports</reportDirectory>
                 </configuration>
             </plugin>
+
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <version>1.2.1</version>
+                <configuration>
+                    <mainClass>ru.ksodd.Runners.Runner</mainClass>
+                </configuration>
+            </plugin>
+
         </plugins>
     </build>
+
 
     <dependencies>
 
@@ -179,7 +190,6 @@
             <artifactId>junit-platform-surefire-provider</artifactId>
             <version>1.2.0</version>
         </dependency>
-
 
         <dependency>
             <groupId>org.apache.logging.log4j</groupId>
