@@ -2,9 +2,11 @@ package ru.ksodd.Runners;
 
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.Selenide;
+import com.codeborne.selenide.WebDriverRunner;
 import cucumber.api.CucumberOptions;
 import cucumber.api.SnippetType;
 import cucumber.api.junit.Cucumber;
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.BeforeClass;
 import org.junit.runner.RunWith;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -12,7 +14,6 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import java.awt.*;
 
 import static com.codeborne.selenide.Selenide.open;
-
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
@@ -24,15 +25,19 @@ import static com.codeborne.selenide.Selenide.open;
         strict = true
 )
 
+
+
 public class Runner {
 
     @BeforeClass
 
     static public void Initialization() throws AWTException {
+        WebDriverManager.chromedriver().setup();
         Configuration.timeout = 8000;
         Configuration.startMaximized = true;
+        Configuration.driverManagerEnabled=true;
 //        System.setProperty("webdriver.chrome.driver", "src/test/repository/chromedriver.exe");
-        Configuration.headless = true;
+//        Configuration.headless = true;
 //        Configuration.browser = "chrome";
 //        Если нужно оставлять браузер открытым по окончании теста, по умолчанию значение false
 //            Configuration.holdBrowserOpen = true;

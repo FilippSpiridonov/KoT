@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="0e000fa9-2bfa-4e03-9359-4a33411424e0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/ksodd/Runners/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/ksodd/Runners/Runner.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -14,15 +16,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/ru/ksodd/Features/Act/4_Matching.feature">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="39" column="29" selection-start-line="39" selection-start-column="29" selection-end-line="39" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/ru/ksodd/Features/Act/3_Design.feature">
           <provider selected="true" editor-type-id="text-editor">
@@ -48,11 +41,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/ru/ksodd/Runners/Runner.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="34" column="38" selection-start-line="34" selection-start-column="38" selection-end-line="34" selection-end-column="38" />
+            <state relative-caret-position="391">
+              <caret line="32" column="23" selection-start-line="32" selection-start-column="23" selection-end-line="32" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -60,11 +53,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk-9.0.1/lib/src.zip!/java.base/java/lang/ProcessImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="203">
+              <caret line="489" column="31" selection-start-line="489" selection-start-column="31" selection-end-line="489" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="33" selection-start-line="33" selection-end-line="33" />
+            <state relative-caret-position="139">
+              <caret line="182" selection-start-line="182" selection-end-line="182" />
             </state>
           </provider>
         </entry>
@@ -198,11 +200,11 @@
         <option value="$PROJECT_DIR$/src/test/java/ru/ksodd/Pages/Design_TZ.java" />
         <option value="$PROJECT_DIR$/src/test/java/ru/ksodd/Features/Act/3_Design.feature" />
         <option value="$PROJECT_DIR$/src/test/java/ru/ksodd/Features/Act/4_Matching.feature" />
-        <option value="$PROJECT_DIR$/src/test/java/ru/ksodd/Runners/Runner.java" />
         <option value="$PROJECT_DIR$/src/test/java/ru/ksodd/Helpers/TestHelper.java" />
         <option value="$PROJECT_DIR$/src/test/java/ru/ksodd/Features/Act/5_Statement.feature" />
         <option value="$PROJECT_DIR$/src/test/java/ru/ksodd/Features/Act/6_Implementation.feature" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/ru/ksodd/Runners/Runner.java" />
       </list>
     </option>
   </component>
@@ -316,8 +318,7 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="ru" type="462c0819:PsiDirectoryNode" />
               <item name="ksodd" type="462c0819:PsiDirectoryNode" />
-              <item name="Features" type="462c0819:PsiDirectoryNode" />
-              <item name="Act" type="462c0819:PsiDirectoryNode" />
+              <item name="Runners" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="КоТ_project" type="b2602c69:ProjectViewProjectNode" />
@@ -367,7 +368,7 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="216" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="216" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="216" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550123757380" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550130474542" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
@@ -562,28 +563,24 @@
       <option name="project" value="LOCAL" />
       <updated>1550121949327</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Правка мавен">
+      <created>1550123574666</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1550123574666</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Правка мавен 1">
+      <created>1550123785703</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1550123785703</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Runner - 2019.02.13 at 11h 14m 17s.xml">
-      <configuration name="Runner" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Runner - 2019.02.13 at 11h 47m 48s.xml">
-      <configuration name="Runner" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Runner - 2019.02.13 at 12h 04m 07s.xml">
-      <configuration name="Runner" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Runner - 2019.02.13 at 13h 56m 43s.xml">
-      <configuration name="Runner" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Runner - 2019.02.13 at 14h 13m 22s.xml">
-      <configuration name="Runner" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Runner - 2019.02.13 at 14h 34m 10s.xml">
-      <configuration name="Runner" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="Runner - 2019.02.13 at 14h 54m 05s.xml">
       <configuration name="Runner" configurationId="JUnit" />
     </history-entry>
@@ -594,6 +591,24 @@
       <configuration name="Runner" configurationId="JUnit" />
     </history-entry>
     <history-entry file="Runner - 2019.02.13 at 16h 27m 19s.xml">
+      <configuration name="Runner" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Runner - 2019.02.14 at 10h 02m 40s.xml">
+      <configuration name="Runner" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Runner - 2019.02.14 at 10h 04m 51s.xml">
+      <configuration name="Runner" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Runner - 2019.02.14 at 10h 09m 46s.xml">
+      <configuration name="Runner" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Runner - 2019.02.14 at 10h 25m 06s.xml">
+      <configuration name="Runner" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Runner - 2019.02.14 at 10h 25m 13s.xml">
+      <configuration name="Runner" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Runner - 2019.02.14 at 10h 27m 05s.xml">
       <configuration name="Runner" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -608,6 +623,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1874" height="1096" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Structure" order="0" sideWeight="0.50157726" side_tool="true" weight="0.26901874" />
       <window_info id="Image Layers" order="1" />
@@ -615,18 +631,18 @@
       <window_info id="UI Designer" order="3" />
       <window_info id="Capture Tool" order="4" />
       <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info content_ui="combo" x="678" y="189" width="483" height="542" id="Project" order="6" side_tool="true" visible="true" weight="0.1615215" />
+      <window_info active="true" content_ui="combo" x="678" y="189" width="483" height="542" id="Project" order="6" side_tool="true" visible="true" weight="0.1615215" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.47519293" weight="0.3281412" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.6907387" visible="true" weight="0.3416407" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.69018745" visible="true" weight="0.3416407" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49889746" weight="0.32917964" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.4950386" weight="0.32917964" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.3092613" side_tool="true" visible="true" weight="0.3416407" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49448732" weight="0.32917964" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.30981258" side_tool="true" visible="true" weight="0.3416407" />
       <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.49724367" weight="0.32917964" />
-      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.47629547" weight="0.32917964" />
+      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.47574422" weight="0.32917964" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -654,7 +670,8 @@
     <MESSAGE value="Удалил клон мавена maven supefire plugin" />
     <MESSAGE value="Добавлена версия maven compiler plugin" />
     <MESSAGE value="Правка мавен" />
-    <option name="LAST_COMMIT_MESSAGE" value="Правка мавен" />
+    <MESSAGE value="Правка мавен 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Правка мавен 1" />
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="watch">
@@ -671,15 +688,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/target/test-classes/ru/ksodd/Steps/TestLoginPage.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#381#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/com/codeborne/selenide/5.1.0/selenide-5.1.0.jar!/com/codeborne/selenide/Selenide.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -1078,20 +1086,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ru/ksodd/Runners/Runner.java">
+    <entry file="jar://C:/Program Files/Java/jdk-9.0.1/lib/src.zip!/java.base/java/lang/ProcessImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="34" column="38" selection-start-line="34" selection-start-column="38" selection-end-line="34" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="203">
+          <caret line="489" column="31" selection-start-line="489" selection-start-column="31" selection-end-line="489" selection-end-column="31" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="33" selection-start-line="33" selection-end-line="33" />
+        <state relative-caret-position="139">
+          <caret line="182" selection-start-line="182" selection-end-line="182" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ru/ksodd/Runners/Runner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="32" column="23" selection-start-line="32" selection-start-column="23" selection-end-line="32" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
