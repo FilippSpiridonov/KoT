@@ -367,7 +367,7 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="216" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="216" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="216" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550121986803" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550123757380" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
