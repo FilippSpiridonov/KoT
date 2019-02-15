@@ -16,4 +16,11 @@ public class TestDesign_TZPage {
         Design_TZ.inputBase(text);
     }
 
+    @When("^Выбор основания \"(.*)\"$")
+    public static void selectionBase(String base){
+        Design_TZ.inputBase(base);
+    }
+
+
+
 }

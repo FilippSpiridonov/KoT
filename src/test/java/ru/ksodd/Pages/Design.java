@@ -2,6 +2,7 @@ package ru.ksodd.Pages;
 
 import com.codeborne.selenide.SelenideElement;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import ru.ksodd.Helpers.TestHelper;
 
@@ -48,6 +49,7 @@ public class Design {
         $(By.xpath("//input[@aria-label='Улица']")).click();
         $(By.xpath("//input[@aria-label='Улица']")).setValue(street);
         $(By.xpath("//div[@class='v-list__tile__title']/span[contains(.,'" + street + "')]")).click();
+        actions().sendKeys(Keys.ESCAPE).perform();
     }
 
     public static void uploadFile(String file, String fileName) {

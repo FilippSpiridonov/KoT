@@ -15,13 +15,12 @@ import org.testng.annotations.Test;
 import java.awt.*;
 
 import static com.codeborne.selenide.Selenide.open;
-@Test
 @RunWith(Cucumber.class)
 @CucumberOptions(
         features = {"src/test/java/ru/ksodd/Features"},
         glue = "ru/ksodd/Steps",
-        tags = {"@Реализация or @Проектирование or @Согласование or @Утверждение or @Инициатива"},
-//        tags = {"@Проектирование_ТЗ or @Авторизация"},
+//        tags = {"@Реализация or @Проектирование or @Согласование or @Утверждение or @Инициатива"},
+        tags = {"@Проектирование_ТЗ or @Авторизация"},
 //        plugin = {"json:target/allure-results"},
         strict = true
 )
