@@ -8,6 +8,7 @@ import org.openqa.selenium.By;
 import org.testng.Assert;
 import ru.ksodd.Helpers.TestHelper;
 import ru.ksodd.Steps.TestLoginPage;
+//import ru.yandex.qatools.allure.annotations.Description;
 
 
 import static com.codeborne.selenide.Selenide.$;
@@ -15,6 +16,7 @@ import static ru.ksodd.Helpers.TestHelper.errorLogging;
 import static ru.ksodd.Helpers.TestHelper.logging;
 
 @Deprecated
+
 public class LoginPage {
 
     //Логин

@@ -13,4 +13,21 @@ public class Statement {
         $(By.xpath("//label[text()[contains(.,'"+word+"')]]")).should(Condition.exist);
         $(By.xpath("//label[text()[contains(.,'"+word+"')]]")).click();
     }
+
+    public static void inputDate(){
+        $(By.xpath("//span[text()[contains(.,'Дата реализации')]]/..//input[@aria-label='Выберите дату']")).click();
+        $(By.xpath("//tr[last()]/td[last()-1]/button[@type='button']/div[@class='v-btn__content']")).click();
+    }
+
+    public static void inputDateEnd(){
+//        $(By.xpath("//span[text()[contains(.,'Дата реализации')]]/..//input[@aria-label='Выберите дату']")).click();
+        $(By.xpath("//tr[last()]/td[last()]/button[@type='button']/div[@class='v-btn__content']")).click();
+    }
+
+    public static void inputDateEnd1(){
+        $(By.xpath("//span[text()[contains(.,'Дата реализации')]]/..//input[@aria-label='Выберите дату']")).click();
+        $(By.xpath("//tr[last()]/td[last()]/button[@type='button']/div[@class='v-btn__content']")).click();
+    }
+
+
 }

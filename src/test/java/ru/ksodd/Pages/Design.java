@@ -16,7 +16,7 @@ public class Design {
 
     public static void selectType(String type) {
         $(By.xpath("//input[@aria-label='Тип']")).click();
-        $(By.xpath("//div[@class='v-list__tile__content']/div[@class='v-list__tile__title' and text()[contains(.,'" + type + "')]]")).click();
+        $(By.xpath("//div[@class='v-list__tile__content']/div[@class='v-list__tile__title' and text()='" + type + "']")).click();
     }
 
     public static void selectProgramm(String program) {
@@ -62,7 +62,7 @@ public class Design {
     }
 
     public static void uploadFile1(String name_file, String fileName) {
-        $(By.xpath("//p[text()='" + name_file + "']/../..//input[@type='file']")).uploadFile(new File("src/test/repository/File/" + fileName));
+        $(By.xpath("//*[text()='" + name_file + "']/../..//input[@type='file']")).uploadFile(new File("src/test/repository/File/" + fileName));
     }
 
     public static void whileCheck(String task) {

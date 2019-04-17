@@ -53,23 +53,39 @@ public class TestDesignPage {
 
     @When("^Клик на таск \"(.*)\"$")
     public static void clickTask(String task) {
-        sleep(2000);
+        sleep(7000);
         TestHelper.clickTask(task);
     }
+
+
+    @When("^Клик на таск \"(.*)\" 2$")
+    public static void clickTask1(String task) {
+        sleep(7000);
+        TestHelper.clickTask(task);
+    }
+
 
     @And("Загрузка   файлов \"(.*)\"")
     public static void uploadFile1(String file_name1) {
         Design.uploadFile1(file_name1, "jpg.jpg");
     }
 
-    @When("^цикл$")
-    public static void whileCheck() {
-        Design.whileCheck("Префектура");
+//    @And("Загрузка   файлов \"(.*)\"  много")
+//    public static void uploadFile1(String file_name2) {
+//        Design.uploadFile1(file_name2, "jpg.jpg");
+//    }
+
+
+    @When("^цикл \"(.*)\"$")
+    public static void whileCheck(String task) {
+        Design.whileCheck(task);
     }
 
     @And("^ввод \"(.*)\" \"(.*)\"$")
     public static void inputGoing(String inputName, String text) {
         Design.inputGoing(inputName, text);
     }
+
+
 
 }

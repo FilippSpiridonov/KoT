@@ -25,12 +25,15 @@ public class TestInitiativePage {
     @And("загрузка файлов \"(.*)\"$")
     public static void uploatFile(String name) {
         Initiative.uploadFile(name);
+        sleep(500);
     }
 
     @And("Клик на кнопку  \"(.*)\"$")
     public static void clickSave(String button) {
+        sleep(1000);
         TestHelper.clickButton(button);
-//        sleep(5000);
+//        sleep(10000);
+
     }
 
     @And("^проверка наличия созданной карточки$")

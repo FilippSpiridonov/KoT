@@ -4,6 +4,7 @@ import com.codeborne.selenide.Condition;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.When;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 
 import java.io.File;
 
@@ -18,7 +19,7 @@ public class Initiative {
     public static void inputStreetInit(String street){
         $(By.xpath("//input[@aria-label='Улица']")).click();
         $(By.xpath("//input[@aria-label='Улица']")).setValue(street);
-        $(By.xpath("//div[@class='v-list__tile__title']")).click();
+        actions().sendKeys(Keys.ENTER).perform();
         sleep(1000);
     }
 
