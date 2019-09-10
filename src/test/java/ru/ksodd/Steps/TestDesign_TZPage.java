@@ -5,12 +5,20 @@ import cucumber.api.java.en.When;
 import ru.ksodd.Helpers.TestHelper;
 import ru.ksodd.Pages.Design_TZ;
 
+import java.io.IOException;
+
+import static com.codeborne.selenide.Selenide.refresh;
 import static com.codeborne.selenide.Selenide.sleep;
 
 public class TestDesign_TZPage {
     @Then("^Переход в раздел \"(.*)\"$")
     public static void clickTab(String nameTab){
         TestHelper.clickTab(nameTab);
+    }
+
+    @Then("^Переход в раздел \"(.*)\" сущпол$")
+    public static void clickTabSush(String nameTab){
+        TestHelper.clickTab1(nameTab);
     }
 
     @When("^Ввод основания \"(.*)\"$")
@@ -29,8 +37,8 @@ public class TestDesign_TZPage {
     }
 
     @When("^Клик на таск \"(.*)\" в ТЗ$")
-    public static void clickTuskTZ(String click){
-        sleep(10000);
+    public static void clickTuskTZ(String click) throws IOException {
+        sleep(3000);
         Design_TZ.clickTusk(click);
     }
 

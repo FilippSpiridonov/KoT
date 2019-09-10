@@ -5,33 +5,35 @@ import cucumber.api.java.en.And;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import cucumber.api.java.en_scouse.An;
+import org.junit.jupiter.api.DisplayName;
 import org.openqa.selenium.By;
 import ru.ksodd.Helpers.TestHelper;
 import ru.ksodd.Pages.Design;
 
 import java.io.DataInput;
+import java.io.IOException;
 
 import static com.codeborne.selenide.Selenide.sleep;
 
 public class TestDesignPage {
 
     @And("^выбор типа \"(.*)\"$")
-    public static void selectType(String type) {
+    public static void selectType(String type) throws IOException {
         Design.selectType(type);
     }
 
     @And("^выбор программы \"(.*)\"$")
-    public static void selectProgramm(String program) {
+    public static void selectProgramm(String program) throws IOException {
         Design.selectProgramm(program);
     }
 
     @And("^ввод объем работ \"(.*)\"$")
-    public static void volume(String metr) {
+    public static void volume(String metr) throws IOException {
         Design.inputVolume(metr);
     }
 
     @And("^ввод планируемых работ \"(.*)\"$")
-    public static void areatext(String areatext) {
+    public static void areatext(String areatext) throws IOException {
         Design.inputBox(areatext);
     }
 
@@ -41,7 +43,7 @@ public class TestDesignPage {
     }
 
     @And("ввод  и выбор улицы \"(.*)\"")
-    public static void selectStreet(String street) {
+    public static void selectStreet(String street) throws IOException {
         sleep(500);
         Design.selectStreet(street);
     }
@@ -52,16 +54,16 @@ public class TestDesignPage {
     }
 
     @When("^Клик на таск \"(.*)\"$")
-    public static void clickTask(String task) {
-        sleep(7000);
+    public static void clickTask(String task) throws IOException {
+        sleep(5000);
         TestHelper.clickTask(task);
     }
 
 
     @When("^Клик на таск \"(.*)\" 2$")
-    public static void clickTask1(String task) {
+    public static void clickTask1(String task) throws IOException {
         sleep(7000);
-        TestHelper.clickTask(task);
+        TestHelper.clickTask1(task);
     }
 
 
@@ -82,10 +84,7 @@ public class TestDesignPage {
     }
 
     @And("^ввод \"(.*)\" \"(.*)\"$")
-    public static void inputGoing(String inputName, String text) {
+    public static void inputGoing(String inputName, String text) throws IOException {
         Design.inputGoing(inputName, text);
     }
-
-
-
 }

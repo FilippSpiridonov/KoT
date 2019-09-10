@@ -5,12 +5,14 @@ import cucumber.api.java.it.Ma;
 import ru.ksodd.Helpers.TestHelper;
 import ru.ksodd.Pages.Matching;
 
+import java.io.IOException;
+
 import static com.codeborne.selenide.Selenide.sleep;
 
 public class TestMatchingPage {
 
     @When("^Клик на таск  \"(.*)\"$")
-    public static void clickTask(String task) {
+    public static void clickTask(String task) throws IOException {
         sleep(5000);
         TestHelper.clickTaskPackage(task);
     }
@@ -46,7 +48,6 @@ public class TestMatchingPage {
         sleep(8000);
         Matching.clickTuskDate1();
     }
-
 
 }
 

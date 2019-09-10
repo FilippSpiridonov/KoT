@@ -5,6 +5,8 @@ import cucumber.api.java.en.When;
 import ru.ksodd.Helpers.TestHelper;
 import ru.ksodd.Pages.Statement;
 
+import java.io.IOException;
+
 public class TestStatementPage {
 
     @And("^Клик по чекбоксу \"(.*)\"$")
@@ -22,12 +24,12 @@ public class TestStatementPage {
     }
 
     @When("^Выбор поздную дату$")
-    public static void inputDateEnd(){
+    public static void inputDateEnd() throws IOException {
         Statement.inputDateEnd1();
     }
 
     @When("Выбор поздную дату 2")
-    public static void inputDateEnd1(){
+    public static void inputDateEnd1() throws IOException {
         Statement.inputDateEnd1();
     }
 

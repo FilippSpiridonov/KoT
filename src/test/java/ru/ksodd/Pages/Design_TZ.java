@@ -4,6 +4,7 @@ import com.codeborne.selenide.Condition;
 import org.openqa.selenium.By;
 import ru.ksodd.Helpers.TestHelper;
 
+import java.io.IOException;
 import java.nio.ByteBuffer;
 
 import static com.codeborne.selenide.Selenide.$;
@@ -21,16 +22,17 @@ public class Design_TZ {
 
 
     public static void selectedLastId(){
-        sleep(3000);
-        numberTZ = $(By.xpath("//div[last()]/div[@data-index='0']/div[1]/div[2]/span[text()]")).getText();
+        sleep(2000);
+        numberTZ = $(By.xpath("//div[@data-index='0']/div/div[last()]/div/div[1]/div[3]/div/span[text()]")).getText();
 //        $(By.xpath("//div[last()]/div[@data-index='0']/div[1]/div[2]/span[text[contains(.,'"+numberTZ+"')]]")).click();
 
     }
 
-    public static void clickTusk(String task) {
-        String xpath = "//*[text()[contains(.,'"+numberTZ+"')]]/../../../div[5]//*[text()[contains(.,'"+task+"')]]";
-        sleep(5000);
-        TestHelper.log("Клик на таск"+task,"Таск "+task+" НЕ был найден",xpath,"click","");
+    public static void clickTusk(String task) throws IOException {
+        String xpath = "//*[text()[contains(.,'"+numberTZ+"')]]/../../../../div[@class='tss-re-card__task-list mb-2 pt-2']/div/div/div/div/*[text()[contains(.,'"+task+"')]]";
+
+        sleep(3000);
+        TestHelper.log("Клик на таск "+task,"Таск "+task+" НЕ был найден",xpath,"click","");
     }
 
     public static void clickZnak(String status){
