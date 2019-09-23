@@ -14,9 +14,9 @@ public class Design_TZ {
 
     public static String numberTZ = "";
 
-    public static void inputBase(String text){
-        $(By.xpath("//div/input[@aria-label='Основания']")).should(Condition.visible);
-        $(By.xpath("//input[@aria-label='Основания']/..")).click();
+    public static void inputBase(String name, String text){
+        $(By.xpath("//div/input[@aria-label='"+name+"']")).should(Condition.visible);
+        $(By.xpath("//input[@aria-label='"+name+"']/..")).click();
         $(By.xpath("//div[@class='v-list__tile__content']/div[text()[contains(.,'"+text+"')]]")).click();
     }
 
@@ -29,9 +29,13 @@ public class Design_TZ {
     }
 
     public static void clickTusk(String task) throws IOException {
-        String xpath = "//*[text()[contains(.,'"+numberTZ+"')]]/../../../../div[@class='tss-re-card__task-list mb-2 pt-2']/div/div/div/div/*[text()[contains(.,'"+task+"')]]";
+//        String xpath = "//*[text()[contains(.,'"+numberTZ+"')]]/../../../../div[@class='tss-re-card__task-list mb-2 pt-2']/div/div/div/div/*[text()[contains(.,'"+task+"')]]";
+        String xpath = "//div[@class='py-1']//span[text()[contains(.,'"+task+"')]]";
 
-        sleep(3000);
+        //div[@class='layout row wrap justify-end']//*[text()[contains(.,'117')]]
+        //span[text()[contains(.,'Принятие в работу')]]
+
+        sleep(500);
         TestHelper.log("Клик на таск "+task,"Таск "+task+" НЕ был найден",xpath,"click","");
     }
 

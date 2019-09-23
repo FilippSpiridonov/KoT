@@ -43,7 +43,7 @@ public class LoginPage {
 
     //Клик на кнопку Войти
     public static void clickButtonCome() throws IOException {
-        sleep(500);
+//        sleep(500);
         //клик на кнопку
         String xpath = "//span[text()='Войти']";
         log("Клик на кнопку Войти", "Не произошел КЛИК на кнопку Войти", xpath, "click", "");

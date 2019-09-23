@@ -99,7 +99,7 @@ public class TestHelper {
     public static void clickButton(String name_button) throws IOException {
         String xpath = "//button/div[text()[contains(.,'" + name_button + "')]]";
         String xpath1 = "//span[@class='caption' and text()[contains(.,'" + name_button + "')]]";
-        sleep(1700);
+        sleep(500);
 
         try {
             $(By.xpath(xpath)).should(visible);
@@ -180,7 +180,7 @@ public class TestHelper {
     }
 
     public static void clickTab(String nameTab) {
-        sleep(1500);
+        sleep(500);
         $(By.xpath("//div[@class='v-tabs__div']/a[text()[contains(.,'"+nameTab+"')]]")).doubleClick();
 //        open("http://172.20.0.78:8181/sp/" + nameTab + "/kanban");  //http://172.20.0.78:8181    //http://77.108.87.134:9696
 

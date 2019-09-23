@@ -22,13 +22,13 @@ public class TestDesign_TZPage {
     }
 
     @When("^Ввод основания \"(.*)\"$")
-    public static void inputBase(String text){
-        Design_TZ.inputBase(text);
+    public static void inputBase(String name, String text){
+        Design_TZ.inputBase(name, text);
     }
 
-    @When("^Выбор основания \"(.*)\"$")
-    public static void selectionBase(String base){
-        Design_TZ.inputBase(base);
+    @When("^Выбор \"(.*)\" \"(.*)\"$")
+    public static void selectionBase(String name, String base){
+        Design_TZ.inputBase(name, base);
     }
 
     @When("^проверка наличия созданной карточки в тз$")
@@ -38,7 +38,7 @@ public class TestDesign_TZPage {
 
     @When("^Клик на таск \"(.*)\" в ТЗ$")
     public static void clickTuskTZ(String click) throws IOException {
-        sleep(3000);
+        sleep(1000);
         Design_TZ.clickTusk(click);
     }
 

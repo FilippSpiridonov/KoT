@@ -32,7 +32,7 @@ public class TestLoginPage {
 
     }
 
-    @When("^выход из системы$")
+    @When("^Выход из системы$")
     public static void exit() throws IOException {
         sleep(1000);
         LoginPage.exit();

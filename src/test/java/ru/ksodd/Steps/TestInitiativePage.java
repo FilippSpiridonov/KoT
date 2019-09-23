@@ -33,7 +33,7 @@ public class TestInitiativePage {
 
     @And("Клик на кнопку  \"(.*)\"$")
     public static void clickSave(String button) throws IOException {
-        sleep(1000);
+//        sleep(500);
         TestHelper.clickButton(button);
 //        sleep(10000);
 

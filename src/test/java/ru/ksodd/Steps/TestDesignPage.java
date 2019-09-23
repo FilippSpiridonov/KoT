@@ -14,6 +14,7 @@ import java.io.DataInput;
 import java.io.IOException;
 
 import static com.codeborne.selenide.Selenide.sleep;
+import static ru.ksodd.Pages.Design_TZ.numberTZ;
 
 public class TestDesignPage {
 
@@ -37,9 +38,9 @@ public class TestDesignPage {
         Design.inputBox(areatext);
     }
 
-    @And("^Клик на чек-бокс провести натурные обследования$")
-    public static void clickCheck() {
-        Design.clickCheck();
+    @And("^Клик на чек-бокс \"(.*)\"$")
+    public static void clickCheck(String name) {
+        Design.clickCheck(name);
     }
 
     @And("ввод  и выбор улицы \"(.*)\"")
@@ -87,4 +88,10 @@ public class TestDesignPage {
     public static void inputGoing(String inputName, String text) throws IOException {
         Design.inputGoing(inputName, text);
     }
+
+    @When("^Поиск запроса по фильтру$")
+    public static void inputZaprosFiltre(){
+        Design.inputZaprosFiltr(numberTZ);
+    }
+
 }

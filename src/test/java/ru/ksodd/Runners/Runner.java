@@ -35,12 +35,12 @@ import static com.codeborne.selenide.Selenide.open;
         features = {"src/test/java/ru/ksodd/Features"},
         glue = "ru/ksodd/Steps",
 //        tags = {"@Реализация or @Утверждение or @Согласование or @Проектирование or @Инициатива or @Авторизация"}, //Актуализация
-//        tags = {"@Реализация_ТЗ or @Согласование_ТЗ or @Проектирование_ТЗ or @Авторизация"},  //ТС
+        tags = {"@Реализация_ТЗ or @Утверждение_ТЗ or @Согласование_ТЗ or @Проектирование_ТЗ"},  //ТС
 //        tags = {"@5_Завершение or @4_Реализация or @Согласование_графика or @Согласование_ПОДД or @Согласование_ТС or @Авторизация"},  //МВК
 //        tags = {"@Сущпол or @Авторизация"}, //Сущпол
 //        tags = {"@Предписание or @Авторизация"}, //Предписание
 
-          tags = {"@Согласование_ТС_Тест or @Авторизация"},  //МВК
+//          tags = {"@Согласование_ТС_Тест or @Авторизация"},  //МВК
 //        tags = {"@Предписание or @Сущпол or @5_Завершение or @4_Реализация or @Согласование_графика or @Согласование_ПОДД or @Согласование_ТС or @Реализация or @Утверждение or @Согласование or @Проектирование or @Инициатива or @Реализация_ТЗ or @Согласование_ТЗ or @Проектирование_ТЗ or @Авторизация "}, //Тест111
 //        tags = {"@Предписание or @Сущпол or @5_Завершение or @4_Реализация or @Согласование_графика or @Согласование_ПОДД or @Согласование_ТС or @Реализация_ТЗ or @Согласование_ТЗ or @Проектирование_ТЗ or @Авторизация "}, //Тест111
 
@@ -56,7 +56,7 @@ public class Runner {
 
     static public void Initialization() throws AWTException {
 
-        Configuration.timeout = 8000;
+        Configuration.timeout = 5000;
 //        Configuration.startMaximized = true;
         Configuration.driverManagerEnabled = true;
         Configuration.screenshots = true;
@@ -67,7 +67,7 @@ public class Runner {
 //        Если нужно оставлять браузер открытым по окончании теста, по умолчанию значение false
 //            Configuration.holdBrowserOpen = true;
 
-        open("http://172.20.0.78:8181");
+        open("http://172.20.0.78:9494");
 //        new Run_Browsers();
         Configuration.savePageSource = false;
     }

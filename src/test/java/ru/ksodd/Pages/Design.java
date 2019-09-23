@@ -49,19 +49,13 @@ public class Design {
 
     }
 
-    public static void clickCheck() {
-        try {
-            $(By.cssSelector("div.v-input.v-input--selection-controls.v-input--checkbox.theme--light > div > div.v-input__slot > div > div")).should(visible);
-            $(By.cssSelector("div.v-input.v-input--selection-controls.v-input--checkbox.theme--light > div > div.v-input__slot > div > div")).click();
-        } catch (AssertionError e){
-            $(By.cssSelector("#formMVKS > div:nth-child(7) > div > div > div > div > div.v-input__slot > div > div")).should(visible);
-            $(By.cssSelector("#formMVKS > div:nth-child(7) > div > div > div > div > div.v-input__slot > div > div")).click();
-
-        }
+    public static void clickCheck(String name) {
+            $(By.xpath("//label[text()='"+name+"']")).should(visible);
+            $(By.xpath("//label[text()='"+name+"']")).click();
     }
 
     public static void selectStreet(String street) throws IOException {
-        String xpath="//input[@aria-label='Улица']";
+        String xpath="//div/input[@id='street_select']";
         TestHelper.log("Клик на поле Улица","Клик на поле Улица НЕ произошел",xpath,"click","");
         TestHelper.log("Ввод значения на поле Улица","Ввод на поле Улица НЕ произошел",xpath,"setValue",street);
         $(By.xpath("//div[@class='v-list__tile__title']/span[contains(.,'" + street + "')]")).click();
@@ -101,6 +95,19 @@ public class Design {
         TestHelper.log("Клик на поле "+inputName+"","Клик на поле "+inputName+" не произошел",xpath,"click","");
         TestHelper.log("Ввод значения на поле "+inputName+"","Ввод на поле "+inputName+" НЕ произошел",xpath,"setValue",text);
     }
+
+
+    public static void inputZaprosFiltr(String num){
+        String xpatch = "//input[@aria-label='Номер ТЗ']";
+        String button = "//div[@class='v-btn__content' and text()[contains(.,'Применить')]]";
+        $(By.xpath(xpatch)).click();
+        $(By.xpath(xpatch)).setValue(num);
+        sleep(1500);
+        $(By.xpath(button)).click();
+        sleep(1500);
+        System.out.println("Пакет " + num);
+
+}
 
 
 }
