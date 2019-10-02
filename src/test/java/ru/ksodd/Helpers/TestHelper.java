@@ -59,7 +59,7 @@ public class TestHelper {
     }
 
     public static void log(String log, String errorLog, String Xpath, String command, String setValue) throws IOException {
-        sleep(500);
+        sleep(100);
         stringLog stringLog1 = stringLog.valueOf(command);
         try {
             switch (stringLog1) {
@@ -102,11 +102,11 @@ public class TestHelper {
         sleep(500);
 
         try {
-            $(By.xpath(xpath)).should(visible);
+//            $(By.xpath(xpath)).should(visible);
             log("Клик на кнопку " + name_button + " произошел", "Клик на кнопку " + name_button + " НЕ произошло", xpath,
                     "click", "");
         } catch (Error e) {
-            $(By.xpath(xpath1)).should(visible);
+//            $(By.xpath(xpath1)).should(visible);
             log("Клик на кнопку " + name_button + " произошел", "Клик на кнопку " + name_button + " НЕ произошло", xpath1,
                     "click", "");
         }

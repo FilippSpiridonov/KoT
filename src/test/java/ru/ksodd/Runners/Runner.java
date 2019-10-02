@@ -56,7 +56,7 @@ public class Runner {
 
     static public void Initialization() throws AWTException {
 
-        Configuration.timeout = 5000;
+        Configuration.timeout = 4000;
 //        Configuration.startMaximized = true;
         Configuration.driverManagerEnabled = true;
         Configuration.screenshots = true;
@@ -68,7 +68,6 @@ public class Runner {
 //            Configuration.holdBrowserOpen = true;
 
         open("http://172.20.0.78:9494");
-//        new Run_Browsers();
         Configuration.savePageSource = false;
     }
 }
