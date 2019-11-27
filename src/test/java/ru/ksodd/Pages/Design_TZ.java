@@ -22,7 +22,7 @@ public class Design_TZ {
 
 
     public static void selectedLastId(){
-        sleep(2000);
+        sleep(1000);
         numberTZ = $(By.xpath("//div[@data-index='0']/div/div[last()]/div/div[1]/div[3]/div/span[text()]")).getText();
 //        $(By.xpath("//div[last()]/div[@data-index='0']/div[1]/div[2]/span[text[contains(.,'"+numberTZ+"')]]")).click();
 

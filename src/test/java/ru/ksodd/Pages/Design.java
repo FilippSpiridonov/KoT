@@ -1,5 +1,6 @@
 package ru.ksodd.Pages;
 
+import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.SelenideElement;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
@@ -55,11 +56,12 @@ public class Design {
     }
 
     public static void selectStreet(String street) throws IOException {
-        String xpath="//div/input[@id='street_select']";
+        String xpath="//input[@aria-label='Улица']";
+        String xpath1="//span[@class='v-list__tile__mask']";
         TestHelper.log("Клик на поле Улица","Клик на поле Улица НЕ произошел",xpath,"click","");
         TestHelper.log("Ввод значения на поле Улица","Ввод на поле Улица НЕ произошел",xpath,"setValue",street);
-        $(By.xpath("//div[@class='v-list__tile__title']/span[contains(.,'" + street + "')]")).click();
-        actions().sendKeys(Keys.ESCAPE).perform();
+        $(By.xpath("//span[@class='v-list__tile__mask']")).click();
+//        actions().sendKeys(Keys.ESCAPE).perform();
     }
 
     public static void uploadFile(String file, String fileName) {
@@ -78,14 +80,14 @@ public class Design {
     public static void whileCheck(String task) {
         WebElement ikon = $(By.xpath("//span[text()[contains(.,'" + TestHelper.number + "')]]/../../../../../div/div[4]//i[text()='error_outline']/../../..//span[text()[contains(.,'" + task + "')]]"));
 
-        for (; ; ) {
+            for (; ;) {
             try {
+                sleep(1000);
                 ((SelenideElement) ikon).should(exist);
                 break;
             } catch (AssertionError e) {
-                sleep(30000);
+                sleep(5000);
                 refresh();
-
             }
         }
     }
@@ -102,9 +104,9 @@ public class Design {
         String button = "//div[@class='v-btn__content' and text()[contains(.,'Применить')]]";
         $(By.xpath(xpatch)).click();
         $(By.xpath(xpatch)).setValue(num);
-        sleep(1500);
+        sleep(1000);
         $(By.xpath(button)).click();
-        sleep(1500);
+        sleep(1000);
         System.out.println("Пакет " + num);
 
 }

@@ -14,8 +14,6 @@ import static com.codeborne.selenide.Selenide.sleep;
 
 public class TestLoginPage {
 
-    @Link("http://77.108.87.134:9696")
-
     @When("^Ввод логина \"(.*)\"$")
     public static void login(String log) throws IOException {
         LoginPage.inputLogin(log);
@@ -34,9 +32,9 @@ public class TestLoginPage {
 
     @When("^Выход из системы$")
     public static void exit() throws IOException {
-        sleep(1000);
+//        sleep(1000);
         LoginPage.exit();
-        sleep(2000);
+//        sleep(2000);
     }
 
 //    @When("Выбор кнопки")

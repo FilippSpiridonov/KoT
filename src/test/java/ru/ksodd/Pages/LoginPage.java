@@ -25,8 +25,6 @@ public class LoginPage {
 
     //Логин
     public static void inputLogin(String log) throws IOException {
-
-
         //клик на поле емайл
         String xpath = "//input[@aria-label='E-mail']";
         log("Клик по полю E-mail", "Поле E-mail не найдено", xpath, "click", "");
